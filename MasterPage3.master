@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage3.master.vb" Inherits="MasterPage3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="210px" ImageUrl="~/Images/Australia.jpg" Width="1098px" />
+        <br />
+        <br />
+        <table border="1" style="width: 100%;">
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/College/Home.aspx">Home</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/College/clg.aspx">College</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/College/aboutus.aspx">AboutUs</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contactus.aspx">ContactUs</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <asp:Image ID="Image2" runat="server" Height="161px" ImageUrl="~/Images/autumn-in-australia-hd-wallpaper-1.jpg" Width="1119px" />
+    </form>
+</body>
+</html>

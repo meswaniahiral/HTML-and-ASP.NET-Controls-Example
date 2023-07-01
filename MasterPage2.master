@@ -1,0 +1,59 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage2.master.vb" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 162px;
+        }
+        .auto-style2 {
+            width: 195px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/Images/autumn-in-australia-hd-wallpaper-1.jpg" Width="100%" />
+        <table style="width: 100%; text-align: center;" border="1">
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/English/Home.aspx">Home</asp:HyperLink>
+                </td>
+                <td class="auto-style1">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/English/englishbasic.aspx">English Basic</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/English/Jobs.aspx">Jobs</asp:HyperLink>
+                </td>
+                <td class="auto-style2">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/English/aboutus.aspx">About Us</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/English/contactus.aspx">Contact Us</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+        <br />
+        <br />
+        Copyright @ 2020 M L Parmar College of Computer Science & IT
+        <asp:Image ID="Image2" runat="server" Height="100px" ImageUrl="~/Images/Australia.jpg" Width="100%" />
+    </div>
+    </form>
+</body>
+</html>
